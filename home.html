@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Student portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.html">
+</head>
+<body>
+    
+
+
+    <header>
+        <div id="top">
+        <img src="pramod.jpg" alt="naruto" class="profile-picture">
+        <h1>Student portfolio</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about" > About</a></li>
+            <li><a href="#education">   Education</a></li>
+            <li><a  href="#skills"> Skills</a>  </li>
+            <li><a href="#contact">  contact</a></li>
+            <li><a href="#Projects">Projects</a> </li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+     <section id="about">
+        <div class="section-content">
+            <h2>About me</h2>
+            <p>hello everyone! this is Lakshmi Pramod Kumar Yalagala.</p>
+            
+        </div>
+     </section>
+     <section id="education">
+     <div class="section-content">
+        <h2>Education</h2>
+        <table border="1" height="300px" width="500px">
+            <tr>
+                <th>degree</th>
+                <th>college</th>
+                <th>department</th>
+            </tr>
+            <tr>
+                <td>10TH</td>
+                <td>k.k.r. Gowtham school</td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>12TH</td>
+                <td>sri chaitanya college</td>
+                <td>M.P.C</td>
+            </tr>
+            <tr>
+                <td>Btech</td>
+                <td>SRM University AP</td>
+                <td>C.S.E</td>
+            </tr>
+        </table>
+     </div>
+    </section>
+    <section id="skills">
+        <div class="section-content">
+            <h2>skills</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Design and analysis of algorithms</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVA SCript</li>
+                <li>Sql</li>
+                
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-content">
+            <h2>contact</h2>
+            <p><b>Phone no: 9876567654</b></p>
+            
+            <b>address</b><br>
+              Village:  mukteswaram<br>
+              Mandal:ballikurava<br>
+              District:prakasam <br>
+              State: Andhra Pradesh<br>
+              <br>
+            <b>Gmail</b>:lakshmipramodkumar@gmail.com
+
+        </div>
+    </section>
+     <section id="Projects">
+        <div class="section-content">
+           <h2>Projects</h2> 
+           <ol> 
+           <li>Dictionary in DSA using C Language</li>
+            <li>Library Management system using C++</li>
+             <li>Bank locker  management system using
+ mysql and web development </li>
+ </ol>
+        </div>
+     </section>
+     <section id="resume">
+        <center>
+        <div class="section-content">
+       <h2>Resume</h2>
+       <a href="my resume.pdf" class="download-button">download cv</a>
+        </div>
+        </center>
+     </section>
+    <footer>
+        <p>&copy; 2024 student portfolio</p>
+    </footer>
+    <button  class="top-button"><a href="#top">  top</a></button>
+
+<script>
+
+// Smooth scrolling to section when clicking on navigation links
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+anchor.addEventListener('click', function(e) {
+
+e.preventDefault();
+
+const targetId = this.getAttribute('href').substring(1);
+ const targetElement =document.getElementById(targetId);
+
+if (targetElement) {
+
+window.scrollTo({
+
+top: targetElement.offsetTop,
+ behavior: 'smooth' });
+}
+});
+});
+
+const topButton = document.getElementById('top-button');
+
+window.addEventListener('scroll', () => {
+
+if (window.scrollY > 300) {
+
+topButton.style.display = 'block';
+
+} else {
+
+topButton.style.display = 'none';
+
+}
+
+});
+
+// Scroll to top when "Top" button is clicked
+
+topButton.addEventListener('click', () => { window.scrollTo({
+
+top: 0,
+
+behavior: 'smooth'
+
+});
+
+});
+
+I
+
+const toggleButton = document.createElement('button');
+
+toggleButton.textContent = 'Toggle Dark/Light Mode';
+
+toggleButton.classList.add('toggle-button');
+
+document.body.appendChild(toggleButton);
+toggleButton.addEventListener('click', () => { document.body.classList.toggle('dark-mode'); });
+
+</script>
+</body>
+</html>
